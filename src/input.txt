@@ -1,0 +1,51 @@
+function fibonacciNumbers(Integer n) {
+    print("Fibonacci numbers:");
+
+    Integer previous = 0;
+    Integer current = 1;
+    Integer index = 1;
+
+    while (index <= n) {
+        print(current);
+        Integer temp = current;
+        current += previous;
+        previous = temp;
+        index++;
+    }
+    print("");
+}
+
+function factorial(Integer n) {
+    print("Factorial number of " + n + ":");
+
+    Integer val = 1;
+    Integer counter = 1;
+
+    while (counter <= n) {
+        val*= counter;
+        counter++;
+    }
+    return String val + "\n";
+}
+
+function oddEven(Integer n) {
+    print("Odd, even and sum:");
+
+    Integer odd = 0;
+    Integer even = 0;
+
+    for (Integer index = 1; index <= n; index++) {
+        if (index % 2 == 0) {
+            even = even + index;
+        } else {
+            odd = odd + index;
+        }
+    }
+    print(odd);
+    print(even);
+    print(odd + even);
+}
+
+fibonacciNumbers(12);
+print(factorial(8));
+oddEven(100);
