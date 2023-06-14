@@ -3,10 +3,19 @@
 ```
 
 # CE305-Small-Compiler
-Implementation of "Jypa" language and compiler translating source language into Python.
+Implementation of "Jypa" language and compiler translating source language into Python.<br>
+
+Language and compiler includes:
+ - Integer, Double, String, and Boolean data types
+ - Functions
+ - If/ifelse/else statements
+ - For and while loops
+ - Arithmetic and Boolean operations
+ - Error and type checking
 
 Full specification: CE305 Assignment Two.pdf
 
+Grammar file: Expr.g4<br>
 Requires ANTLR4
 
 ---
